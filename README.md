@@ -1,4 +1,4 @@
-[![typescript](https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.jpg =50x50)](https://www.typescriptlang.org/)
+[![typescript](https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.jpg](https://www.typescriptlang.org/)
 
 
 
