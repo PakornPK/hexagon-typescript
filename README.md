@@ -15,9 +15,9 @@ This project impliment Hexagonal Architecture using Typescript
   npm install
 ```
     
-## Run
+## Deploy
 
 ```bash
-    npm run dev
+    npm rum deploy
 ```
 
