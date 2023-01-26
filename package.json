@@ -16,8 +16,8 @@
   "scripts": {
     "clean": "rm  dist/*",
     "build:js": "tsc -p tsconfig.json",
-    "build:image": "docker-compose -f deployment/docker-compose.yml build",
-    "deploy": "yarn build:js && yarn build:image && docker-compose -f deployment/docker-compose.yml up -d",
+    "build:image": "docker-compose build",
+    "deploy": "yarn build:js && yarn build:image && docker-compose up -d",
     "start": "node dist/main.js",
     "dev": "ts-node src/main.ts"
   },
