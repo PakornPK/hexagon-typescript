@@ -1,0 +1,23 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: node-hex-ts:1.0.0
+    container_name: app-node-ts
+    ports:
+      - 8080:8080
+    environment:
+      - TZ=Asia/Bangkok
+    links:
+      - db
+  db:
+    image: postgres
+    restart: always
+    container_name: postgresdb
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dev_db
+      # POSTGRES_MULTIPLE_DATABASES=db1,db2
+    ports:
+      - 5432:5432

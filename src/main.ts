@@ -36,7 +36,7 @@ const main = async () => {
     const router = new Router(PostgresDataSource, server)
     router.initRouter()
 
-    server.listen({ port: config.APP_PORT }, (err, address) => {
+    server.listen({ host: "0.0.0.0", port: config.APP_PORT }, (err, address) => {
         if (err) {
             logs.error(err)
             process.exit(1)
